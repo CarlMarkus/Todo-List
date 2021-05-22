@@ -1,0 +1,83 @@
+body{
+  background-color: #f7f7f7;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: auto;
+  margin: 0;
+}
+
+/* universal selctor */
+* {
+  box-sizing: border-box;
+}
+
+h1{
+  color: pink;
+  font-size: 4rem;
+  text-align: center;
+}
+
+form{
+  box-shadow:  0 8px 6px -6px black;
+  max-width: 100%;
+  width: 400px;
+}
+
+.input{
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
+}
+
+.input:focus{
+  outline-color: pink;
+}
+
+.todos{
+  background-color: pink;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.todos li{
+  color: white;
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.todos li.completed{
+  color: grey;
+  text-decoration: line-through;
+}
+
+p{
+  color: #b5b5b5;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.btnClear{
+  width: 100%;
+  background-color: #A9A9A9;
+  border: 0;
+  color: #f7f7f7;
+  padding: 14px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btnClear:hover {
+  text-decoration: underline;
+  background-color: #808080;
+}
